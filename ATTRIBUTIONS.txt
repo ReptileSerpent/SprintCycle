@@ -3,7 +3,7 @@ Music: Uplifting Ballad by Alexander Nakarada (www.serpentsoundstudios.com)
 Licensed under Creative Commons BY Attribution 4.0 License
 https://creativecommons.org/licenses/by/4.0/
 
-assets/480px-CoE-NGOs-cycle-decision-making.svg.png
+assets/480px-CoE-NGOs-cycle-decision-making-modified.svg.png
 CoE-NGOs-cycle-decision-making.svg (https://commons.wikimedia.org/wiki/File:CoE-NGOs-cycle-decision-making.svg) by Wiki-vr.mp, licensed under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/deed.en) / Removed background from original and converted to png
 
 assets/click.wav
