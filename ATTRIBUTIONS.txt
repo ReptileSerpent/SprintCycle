@@ -1,0 +1,21 @@
+assets/Uplifting-Ballad.mp3
+Music: Uplifting Ballad by Alexander Nakarada (www.serpentsoundstudios.com)
+Licensed under Creative Commons BY Attribution 4.0 License
+https://creativecommons.org/licenses/by/4.0/
+
+assets/480px-CoE-NGOs-cycle-decision-making.svg.png
+CoE-NGOs-cycle-decision-making.svg (https://commons.wikimedia.org/wiki/File:CoE-NGOs-cycle-decision-making.svg) by Wiki-vr.mp, licensed under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/deed.en) / Removed background from original and converted to png
+
+assets/click.wav
+"mouse-click-double-00.flac" (https://freesound.org/people/pbimal/sounds/534104/) by pbimal, licensed under CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
+
+assets/LiberationSans-Bold.ttf and assets/LiberationSans-Regular.ttf
+Licensed under Open Font License Version 1.1., see LICENSE.Liberation.txt
+
+assets/Orbitron Medium.ttf
+Licensed under Open Font License Version 1.1., see LICENSE.Orbitron.txt
+
+assets/ComicNeue-Bold.ttf
+Licensed under Open Font License Version 1.1., see LICENSE.ComicNeue.txt
+
+Godot and libraries Godot utilises have been used, including during the build process. Corresponding license notices and/or attributions are available in the following files: LICENSE.Godot.txt, CREDIT.FreeType.txt, LICENSE.ENet.txt, LICENSE.MBedTLS.txt

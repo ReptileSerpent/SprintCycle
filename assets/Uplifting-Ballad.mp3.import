@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Uplifting-Ballad.mp3-3465062b7498aee7ee77dfc80d973ab9.mp3str"
+
+[deps]
+
+source_file="res://assets/Uplifting-Ballad.mp3"
+dest_files=[ "res://.import/Uplifting-Ballad.mp3-3465062b7498aee7ee77dfc80d973ab9.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

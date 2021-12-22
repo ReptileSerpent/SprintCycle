@@ -1,0 +1,76 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/UserStoriesGUI.gd" type="Script" id=1]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://assets/LiberationSans-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+font_data = SubResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+
+[sub_resource type="DynamicFontData" id=4]
+font_path = "res://assets/LiberationSans-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=5]
+size = 22
+font_data = SubResource( 4 )
+
+[node name="VBoxContainer" type="VBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_right = 480.0
+margin_bottom = 75.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Choose user stories for the current sprint"
+align = 1
+autowrap = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+margin_top = 79.0
+margin_right = 480.0
+margin_bottom = 746.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+margin_right = 480.0
+margin_bottom = 667.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="."]
+margin_top = 750.0
+margin_right = 480.0
+margin_bottom = 800.0
+rect_min_size = Vector2( 50, 50 )
+size_flags_horizontal = 3
+custom_styles/panel = SubResource( 3 )
+
+[node name="Button" type="Button" parent="Panel"]
+margin_left = 139.839
+margin_top = 6.1748
+margin_right = 351.839
+margin_bottom = 45.1748
+custom_fonts/font = SubResource( 5 )
+disabled = true
+text = "Proceed to the sprint"
+__meta__ = {
+"_edit_use_anchors_": false
+}

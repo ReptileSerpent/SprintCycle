@@ -1,0 +1,152 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://assets/Uplifting-Ballad.mp3" type="AudioStream" id=1]
+[ext_resource path="res://src/GameplayScene.gd" type="Script" id=2]
+[ext_resource path="res://src/CongratulationsScene.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/BottomGUI.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/TopGUI.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/TasksGUI.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/DevelopersGUI.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/MetricsScene.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/TitleScreenScene.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/Credits.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/SprintReviewGUI.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/CourseEnrollmentDialogGUI.tscn" type="PackedScene" id=12]
+[ext_resource path="res://src/UserStoriesGUI.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/VacationDialogGUI.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/SprintRetrospectiveGUI.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/DailyGUI.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/CourseEnrollmentGUI.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/MetricsScene.gd" type="Script" id=18]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 100, 100 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.996078, 1, 0.92549, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ColorRect"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopGUI" parent="ColorRect/VBoxContainer2" instance=ExtResource( 5 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 480.0
+margin_bottom = 55.0
+
+[node name="MetricsScene" parent="ColorRect/VBoxContainer2" instance=ExtResource( 8 )]
+visible = false
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 59.0
+margin_right = 480.0
+margin_bottom = 390.0
+script = ExtResource( 18 )
+
+[node name="UserStoriesGUI" parent="ColorRect/VBoxContainer2" instance=ExtResource( 13 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 59.0
+margin_right = 480.0
+margin_bottom = 726.0
+
+[node name="DailyGUI" parent="ColorRect/VBoxContainer2" instance=ExtResource( 16 )]
+visible = false
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 394.0
+margin_right = 480.0
+margin_bottom = 726.0
+
+[node name="TasksGUI" parent="ColorRect/VBoxContainer2" instance=ExtResource( 6 )]
+visible = false
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 326.0
+margin_right = 480.0
+margin_bottom = 726.0
+
+[node name="DevelopersGUI" parent="ColorRect/VBoxContainer2" instance=ExtResource( 7 )]
+visible = false
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 394.0
+margin_right = 480.0
+margin_bottom = 726.0
+
+[node name="CourseEnrollmentGUI" parent="ColorRect/VBoxContainer2" instance=ExtResource( 17 )]
+visible = false
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 394.0
+margin_right = 480.0
+margin_bottom = 726.0
+
+[node name="SprintReviewGUI" parent="ColorRect/VBoxContainer2" instance=ExtResource( 11 )]
+visible = false
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 326.0
+margin_right = 480.0
+margin_bottom = 726.0
+
+[node name="SprintRetrospectiveGUI" parent="ColorRect/VBoxContainer2" instance=ExtResource( 15 )]
+visible = false
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 394.0
+margin_right = 480.0
+margin_bottom = 726.0
+
+[node name="BottomGUI" parent="ColorRect/VBoxContainer2" instance=ExtResource( 4 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 730.0
+margin_right = 480.0
+margin_bottom = 800.0
+
+[node name="PopupPanel" parent="." instance=ExtResource( 14 )]
+
+[node name="PopupDialog" parent="." instance=ExtResource( 12 )]
+visible = false
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="TitleScreen" parent="." instance=ExtResource( 9 )]
+margin_bottom = 0.0
+
+[node name="Credits" parent="." instance=ExtResource( 10 )]
+visible = false
+
+[node name="CongratulationsScreen" parent="." instance=ExtResource( 3 )]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 0.0
+margin_bottom = 0.0
+rect_min_size = Vector2( 100, 100 )
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )

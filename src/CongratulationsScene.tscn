@@ -1,0 +1,77 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/LiberationSans-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://src/CongratulationsScene.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://assets/LiberationSans-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://assets/LiberationSans-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 28
+font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 32
+font_data = ExtResource( 1 )
+
+[node name="Control" type="Control"]
+margin_right = 480.0
+margin_bottom = 800.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_right = 480.0
+margin_bottom = 400.0
+rect_min_size = Vector2( 100, 50 )
+custom_fonts/bold_font = SubResource( 2 )
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]
+
+
+[b]Congratulations![/b]
+
+
+
+You have completed the game!
+
+Stay tuned for further updates.
+[/center]"
+text = "
+
+
+Congratulations!
+
+
+
+You have completed the game!
+
+Stay tuned for further updates.
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 59.6607
+margin_top = 561.978
+margin_right = 423.661
+margin_bottom = 611.978
+custom_fonts/font = SubResource( 5 )
+text = "Return to the title screen"
+__meta__ = {
+"_edit_use_anchors_": false
+}

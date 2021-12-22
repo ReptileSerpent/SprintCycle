@@ -1,0 +1,113 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/LiberationSans-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://src/SprintReviewGUI.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 55
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFontData" id=2]
+font_path = "res://assets/LiberationSans-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=3]
+size = 22
+font_data = SubResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+
+[sub_resource type="DynamicFont" id=5]
+size = 22
+font_data = ExtResource( 1 )
+
+[node name="VBoxContainer" type="VBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -139.0
+margin_bottom = -580.0
+rect_min_size = Vector2( 400, 400 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HeadingLabel" type="Label" parent="."]
+margin_right = 400.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Sprint Review"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+margin_top = 66.0
+margin_right = 400.0
+margin_bottom = 346.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextLabel" type="Label" parent="ScrollContainer"]
+margin_right = 388.0
+margin_bottom = 1033.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "User story \"I am a client; I want to be able
+to install the program on MacOS-based
+workstations for greater convenience\"
+   Completion 20%
+
+User story \"I am a client; I want to be able
+to install the program on Windows-based
+workstations for greater convenience\"
+   Completion 10%
+
+User story \"I am a developer; I want to be
+able to have remote read access to the
+database for greater convenience\"
+   Completion 20%
+
+User story \"I am a developer; I want to be
+able to drop the database remotely for
+greater convenience\"
+   Completion 100%
+
+User story \"I am a former developer; I want
+my job back\"
+   Completion 0%
+
+Stakeholders' reception: very positive/positive/
+mixed/negative/very negative
+Your position as scrum master is questioned.
+
+"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+margin_top = 350.0
+margin_right = 400.0
+margin_bottom = 400.0
+rect_min_size = Vector2( 100, 50 )
+size_flags_horizontal = 3
+custom_styles/panel = SubResource( 4 )
+
+[node name="Button" type="Button" parent="Panel"]
+margin_left = 84.1846
+margin_top = 10.1021
+margin_right = 390.185
+margin_bottom = 41.1021
+custom_fonts/font = SubResource( 5 )
+text = "Proceed to sprint retrospective"
+__meta__ = {
+"_edit_use_anchors_": false
+}

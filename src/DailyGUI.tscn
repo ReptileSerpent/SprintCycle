@@ -1,0 +1,107 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/LiberationSans-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/LiberationSans-Bold.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 22
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 22
+font_data = ExtResource( 1 )
+
+[node name="ScrollContainer" type="ScrollContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_right = 480.0
+margin_bottom = 800.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/bold_font = SubResource( 1 )
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "[center][b]Daily[/b][/center]
+
+ [b]Jacob:[/b]
+ [b]What did I do yesterday?[/b]
+ I worked on <Task name>
+ [b]What am i going to do today?[/b]
+ Continue working on <Task name>
+ [b]What are my impediments?[/b]
+ Feeling stuck on some SQL queries
+ for the test server
+
+ [b]Martin:[/b]
+ [b]What did I do yesterday?[/b]
+ I worked on <Task name>
+ [b]What am i going to do today?[/b]
+ Continue working on <Task name>
+ [b]What are my impediments?[/b]
+ Feeling stuck on some SQL queries
+ for the test server
+
+ [b]Trevor:[/b]
+ [b]What did I do yesterday?[/b]
+ I worked on <Task name>
+ [b]What am i going to do today?[/b]
+ Continue working on <Task name>
+ [b]What are my impediments?[/b]
+ Feeling stuck on some SQL queries
+ for the test server
+
+ [b]Alfred:[/b]
+ [b]What did I do yesterday?[/b]
+ I worked on <Task name>
+ [b]What am i going to do today?[/b]
+ Continue working on <Task name>
+ [b]What are my impediments?[/b]
+ Feeling stuck on some SQL queries
+ for the test server"
+text = "Daily
+
+ Jacob:
+ What did I do yesterday?
+ I worked on <Task name>
+ What am i going to do today?
+ Continue working on <Task name>
+ What are my impediments?
+ Feeling stuck on some SQL queries
+ for the test server
+
+ Martin:
+ What did I do yesterday?
+ I worked on <Task name>
+ What am i going to do today?
+ Continue working on <Task name>
+ What are my impediments?
+ Feeling stuck on some SQL queries
+ for the test server
+
+ Trevor:
+ What did I do yesterday?
+ I worked on <Task name>
+ What am i going to do today?
+ Continue working on <Task name>
+ What are my impediments?
+ Feeling stuck on some SQL queries
+ for the test server
+
+ Alfred:
+ What did I do yesterday?
+ I worked on <Task name>
+ What am i going to do today?
+ Continue working on <Task name>
+ What are my impediments?
+ Feeling stuck on some SQL queries
+ for the test server"

@@ -1,0 +1,101 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/HBoxContainer.gd" type="Script" id=1]
+[ext_resource path="res://assets/LiberationSans-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/click.wav" type="AudioStream" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 25
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 25
+extra_spacing_top = 10
+extra_spacing_bottom = 10
+font_data = ExtResource( 3 )
+
+[node name="MarginContainer" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -745.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 480.0
+margin_bottom = 55.0
+color = Color( 1, 0.952941, 0.796078, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_right = 480.0
+margin_bottom = 55.0
+alignment = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="HBoxContainer"]
+margin_right = 8.0
+margin_bottom = 55.0
+rect_min_size = Vector2( 0, 55 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = " "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer"]
+margin_left = 12.0
+margin_right = 90.0
+margin_bottom = 55.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+margin_left = 94.0
+margin_top = 13.0
+margin_right = 282.0
+margin_bottom = 42.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Sprint 1, Day 1/7"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer"]
+margin_left = 286.0
+margin_right = 364.0
+margin_bottom = 55.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="HBoxContainer"]
+margin_left = 368.0
+margin_right = 480.0
+margin_bottom = 55.0
+size_flags_vertical = 0
+custom_fonts/font = SubResource( 3 )
+text = "Next day"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ClickSound" type="AudioStreamPlayer" parent="HBoxContainer/Button"]
+stream = ExtResource( 4 )

@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/CourseEnrollmentDialogGUI.gd" type="Script" id=1]
+
+[node name="PopupDialog" type="PopupDialog"]
+visible = true
+margin_right = 200.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 200, 100 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_right = 198.0
+margin_bottom = 70.0
+text = "            Enroll Jacob into
+    Database Management (2)
+                  course?
+Duration: 1 sprint, 3 hours/day"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 8.32446
+margin_top = 72.5417
+margin_right = 42.3245
+margin_bottom = 92.5417
+text = "Yes"
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 136.759
+margin_top = 72.5417
+margin_right = 190.759
+margin_bottom = 92.5417
+text = "Cancel"
+__meta__ = {
+"_edit_use_anchors_": false
+}

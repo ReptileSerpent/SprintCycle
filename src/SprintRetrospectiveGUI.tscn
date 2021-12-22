@@ -1,0 +1,247 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://assets/LiberationSans-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://src/SprintRetrospectiveGUI.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFontData" id=2]
+font_path = "res://assets/ComicNeue-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=3]
+size = 22
+font_data = SubResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 22
+font_data = SubResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 22
+font_data = SubResource( 2 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 22
+font_data = SubResource( 2 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 22
+font_data = SubResource( 2 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 22
+font_data = SubResource( 2 )
+
+[sub_resource type="DynamicFontData" id=9]
+font_path = "res://assets/LiberationSans-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=10]
+size = 22
+font_data = SubResource( 9 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -480.0
+margin_bottom = -800.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HeadingLabel" type="Label" parent="."]
+margin_left = 20.1587
+margin_top = 6.29961
+margin_right = 459.159
+margin_bottom = 64.2996
+rect_pivot_offset = Vector2( -702.803, -106.322 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Sprint Retrospective"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WhatWentWellLabel" type="Label" parent="."]
+margin_left = 11.3922
+margin_top = 84.302
+margin_right = 153.392
+margin_bottom = 109.302
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "what went well"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CompletedAllTasksLabel" type="Label" parent="."]
+margin_left = 31.4129
+margin_top = 118.3
+margin_right = 216.413
+margin_bottom = 143.3
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "completed all tasks"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NotAllTasksCompletedLabel" type="Label" parent="."]
+margin_left = 249.913
+margin_top = 136.3
+margin_right = 466.913
+margin_bottom = 162.3
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "not all tasks completed"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GoodCooperationLabel" type="Label" parent="."]
+margin_left = 39.0
+margin_top = 155.0
+margin_right = 157.0
+margin_bottom = 180.0
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "cooperation"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WhatWentLessWellLabel" type="Label" parent="."]
+margin_left = 269.007
+margin_top = 99.9698
+margin_right = 456.007
+margin_bottom = 124.97
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "what went less well"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PoorCooperationLabel" type="Label" parent="."]
+margin_left = 280.76
+margin_top = 231.192
+margin_right = 398.76
+margin_bottom = 257.192
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "cooperation"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LowMoraleLabel" type="Label" parent="."]
+margin_left = 343.081
+margin_top = 158.897
+margin_right = 438.081
+margin_bottom = 183.897
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "morale :("
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BoredomLabel" type="Label" parent="."]
+margin_left = 269.465
+margin_top = 178.648
+margin_right = 361.465
+margin_bottom = 203.648
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "boredom"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TooManyTasksLabel" type="Label" parent="."]
+margin_left = 286.416
+margin_top = 205.135
+margin_right = 432.416
+margin_bottom = 230.135
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "too many tasks"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WhatCouldChangeLabel" type="Label" parent="."]
+margin_left = 68.4704
+margin_top = 320.069
+margin_right = 249.47
+margin_bottom = 345.069
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "what could change"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RemoveDailiesLabel" type="Label" parent="."]
+margin_left = 111.286
+margin_top = 348.606
+margin_right = 253.286
+margin_bottom = 373.606
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "remove dailies"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AddMoreStoriesToSprintsLabel" type="Label" parent="."]
+margin_left = 61.0195
+margin_top = 373.409
+margin_right = 316.019
+margin_bottom = 398.409
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "add more stories to sprints"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HaveFewerStoriesInSprintsLabel" type="Label" parent="."]
+margin_left = 64.1979
+margin_top = 398.836
+margin_right = 333.198
+margin_bottom = 423.836
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "have fewer stories in sprints"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AssignTasksBetterLabel" type="Label" parent="."]
+margin_left = 81.8216
+margin_top = 429.978
+margin_right = 183.822
+margin_bottom = 454.978
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "have tasks assigned better"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 109.621
+margin_top = 581.464
+margin_right = 368.621
+margin_bottom = 612.464
+custom_fonts/font = SubResource( 10 )
+text = "Proceed to the next sprint"
+__meta__ = {
+"_edit_use_anchors_": false
+}
