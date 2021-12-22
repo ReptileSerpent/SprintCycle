@@ -12,7 +12,6 @@ config_version=4
 
 config/name="SprintCycle"
 run/main_scene="res://src/GameplayScene.tscn"
-config/icon="res://icon.png"
 
 [display]
 
