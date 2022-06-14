@@ -1,0 +1,74 @@
+keys;en;ru
+TITLESCREEN_NEWGAME;Start game;Начать игру
+TITLESCREEN_CONTINUE;Continue;Продолжить
+TITLESCREEN_HELP;Help;Помощь
+TITLESCREEN_SETTINGS;Settings;Настройки
+TITLESCREEN_CREDITS;Credits;Титры
+HELPSCREEN_CLOSEBUTTON;Close;Закрыть
+SETTINGS_HEADING;Settings;Настройки
+SETTINGS_MUSICBUTTON;Music;Музыка
+SETTINGS_LANGUAGELABEL;Language;Язык
+SETTINGS_LANGUAGEOPTION_EN;English;Английский
+SETTINGS_LANGUAGEOPTION_RU;Russian;Русский
+SETTINGS_CLOSEBUTTON;Close;Закрыть
+CREDITS_CLOSEBUTTON;Close;Закрыть
+TOPGUI_SPRINT;Sprint;Спринт
+TOPGUI_DAY;Day;День
+TOPGUI_NEXTDAY;Next day;Следующий день
+BOTTOMGUI_METRICS;Metrics;Метрики
+BOTTOMGUI_DEVELOPERS;Developers;Команда
+BOTTOMGUI_DAILY;Daily;Дейли
+BOTTOMGUI_TASKS;Tasks;Задания
+BOTTOMGUI_MENU_MUSICITEM;Music on/off;Вкл/выкл музыку
+BOTTOMGUI_MENU_RETURNTOTITLESCREENITEM;Return to title screen;Вернуться на титульный экран
+DAILYGUI_HEADING;Daily;Дейли
+DAILYGUI_FIRSTDAYOFSPRINTDAILY;A daily on the first day of a sprint may be skipped. Nothing to report.;Дейли в первый день спринта можно не проводить.
+DAILYGUI_YESTERDAYSTASKQUESTION;What did I do yesterday?;Что было сделано вчера?
+DAILYGUI_TODAYSTASKQUESTION;What am I going to do today?;Что я буду делать сегодня?
+DAILYGUI_IMPEDIMENTSQUESTION;What are my impediments?;Что мне мешает?
+DAILYGUI_COMPLETEDTASKANSWER;Completed task;Завершена работа над заданием
+DAILYGUI_WORKEDONTASKANSWER;Worked on task;Сделана часть работы над заданием
+DAILYGUI_NOTHINGWORKEDONASNWER;Nothing (no tasks were assigned);Ничего (задания не были назначены)
+DAILYGUI_WILLCONTINUEWORKINGONTASKANSWER;Continue working on task;Продолжу работу над заданием
+DAILYGUI_DONTKNOWWHATTASKTODAYANSWER;I don't know yet;Ещё не знаю
+DAILYGUI_UNFAMILIARTECHNOLOGYANSWER;A technology I encountered is unfamiliar to me;Встреченная мной технология мне незнакома
+DAILYGUI_SOMEWHATUNFAMILIARTECHNOLOGYANSWER;A technology I encountered is somewhat unfamiliar to me;Встреченная мной технология мне не совсем знакома
+DAILYGUI_NOIMPEDIMENTSANSWER;None currently;Пока что ничего
+USERSTORIESGUI_CHOOSEUSERSTORIES;Choose user stories for the current sprint;Выберите пользовательские истории для текущего спринта
+USERSTORIESGUI_PROCEEDTOTHESPRINTBUTTON;Proceed to the sprint;Перейти к спринту
+SPRINTREVIEWGUI_HEADING;Sprint Review;Обзор спринта
+SPRINTREVIEWGUI_COMPLETIONPERCENTAGE;Completion percentage:;Процент выполнения:
+SPRINTREVIEWGUI_STAKEHOLDERSRECEPTION;Stakeholders' reception:;Отзыв представителей заказчика:
+SPRINTREVIEWGUI_NEGATIVESTAKEHOLDERSRECEPTION;negative;отрицательный
+SPRINTREVIEWGUI_MIXEDSTAKEHOLDERSRECEPTION;mixed;смешанный
+SPRINTREVIEWGUI_POSITIVESTAKEHOLDERSRECEPTION;positive;положительный
+SPRINTREVIEWGUI_PROCEEDTOSPRINTRETROSPECTIVEBUTTON;Proceed to sprint retrospective;Перейти к ретроспективе спринта
+SPRINTRETROSPECTIVE_HEADING;Sprint Retrospective;Ретроспектива
+SPRINTRETROSPECTIVE_WHATWENTWELL;what went well;что прошло хорошо
+SPRINTRETROSPECTIVE_COMPLETEDALLTASKS;completed all tasks;всё выполнили
+SPRINTRETROSPECTIVE_COOPERATION;cooperation;кооперация
+SPRINTRETROSPECTIVE_WHATWENTLESSWELL;what went less well;что было не очень
+SPRINTRETROSPECTIVE_NOTALLTASKSCOMPLETED;not all tasks completed;не всё выполнили
+SPRINTRETROSPECTIVE_MORALE;morale :(;настрой :(
+SPRINTRETROSPECTIVE_BOREDOM;boredom;скучно
+SPRINTRETROSPECTIVE_TOOMANYTASKS;too many tasks;заданий много
+SPRINTRETROSPECTIVE_WHATCOULDCHANGE;what could change;что можно поменять
+SPRINTRETROSPECTIVE_REMOVEDAILIES;remove dailies;не проводить дейли
+SPRINTRETROSPECTIVE_ADDMORESTORIESTOSPRINTS;add more stories to sprints;добавлять больше историй
+SPRINTRETROSPECTIVE_HAVEFEWERSTORIESINSPRINTS;have fewer tasks in sprints;уменьшить количество историй
+SPRINTRETROSPECTIVE_HAVETASKSASSIGNEDBETTER;have tasks assigned better;назначать задания лучше
+SPRINTRETROSPECTIVE_PROCEEDTOTHENEXTSPRINTBUTTON;Proceed to the next sprint;Перейти к следующему спринту
+METRICS_SPRINTBURNDOWN;Sprint burndown;Сгорание спринта
+METRICS_VELOCITY;Velocity;Скорость
+METRICS_DEVELOPERSAVAILABILITY;Developers’ availability;Разработчиков на рабочем месте
+USERSTORY_POINTS;Points:;Баллов:
+USERSTORY_ADDTOSPRINTBUTTON;Add to sprint;Добавить в спринт
+TASK_ASSIGNBUTTON;Assign;Назначить
+TASK_INITIALESTIMATION;Initial estimation:;Времени нужно:
+TASK_HOUR;hour;ч.
+TASK_HOURS;hours;ч.
+TASK_PERCENTCOMPLETE;% complete;% выполнено
+TASK_DEVELOPER;developer;разработчик
+TASK_TEMPORARYHELP;temporary help;временная\nпомощь
+TASK_NOONE; ; 
+CONGRATULATIONS_RETURNTOTHETITLESCREENBUTTON;Return to the title screen;Вернуться на титульный экран

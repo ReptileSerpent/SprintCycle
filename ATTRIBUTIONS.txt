@@ -9,7 +9,10 @@ CoE-NGOs-cycle-decision-making.svg (https://commons.wikimedia.org/wiki/File:CoE-
 assets/click.wav
 "mouse-click-double-00.flac" (https://freesound.org/people/pbimal/sounds/534104/) by pbimal, licensed under CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
 
-assets/LiberationSans-Bold.ttf and assets/LiberationSans-Regular.ttf
+assets/LiberationSans-Bold.ttf
+Licensed under Open Font License Version 1.1., see LICENSE.Liberation.txt
+
+assets/LiberationSans-Regular.ttf
 Licensed under Open Font License Version 1.1., see LICENSE.Liberation.txt
 
 assets/Orbitron Medium.ttf
@@ -19,3 +22,5 @@ assets/ComicNeue-Bold.ttf
 Licensed under Open Font License Version 1.1., see LICENSE.ComicNeue.txt
 
 Godot and libraries Godot utilises have been used, including during the build process. Corresponding license notices and/or attributions are available in the following files: LICENSE.Godot.txt, CREDIT.FreeType.txt, LICENSE.ENet.txt, LICENSE.MBedTLS.txt
+
+chart-gd plugin is utilised in the project. chart-gd is licensed under the MIT license, see the LICENSE.chart-gd.txt file.

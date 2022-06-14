@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/LiberationSans-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://src/TitleScreenScene.gd" type="Script" id=2]
@@ -20,11 +20,22 @@ font_data = SubResource( 2 )
 size = 38
 font_data = SubResource( 2 )
 
+[sub_resource type="DynamicFont" id=9]
+size = 38
+font_data = SubResource( 2 )
+
 [sub_resource type="DynamicFont" id=5]
 size = 38
 font_data = SubResource( 2 )
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFontData" id=6]
+font_path = "res://assets/LiberationSans-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=7]
+size = 38
+font_data = SubResource( 6 )
+
+[sub_resource type="DynamicFont" id=8]
 size = 20
 font_data = ExtResource( 1 )
 
@@ -36,15 +47,11 @@ rect_min_size = Vector2( 100, 100 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_left = 94.0
-margin_top = 110.0
-margin_right = 386.0
-margin_bottom = 490.0
+margin_top = 85.0
+margin_right = 492.0
+margin_bottom = 515.0
 custom_constants/separation = 80
 
 [node name="CycleSprite" type="Sprite" parent="VBoxContainer"]
@@ -54,10 +61,10 @@ scale = Vector2( 0.587251, 0.587251 )
 texture = ExtResource( 4 )
 
 [node name="TitleLabel" type="Label" parent="VBoxContainer"]
-margin_right = 292.0
+margin_right = 492.0
 margin_bottom = 46.0
-custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
 text = "SprintCycle"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -65,46 +72,65 @@ __meta__ = {
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer"]
 margin_top = 126.0
-margin_right = 292.0
-margin_bottom = 276.0
+margin_right = 492.0
+margin_bottom = 326.0
 custom_constants/separation = 0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="StartGameButton" type="Button" parent="VBoxContainer/VBoxContainer2"]
-margin_right = 292.0
+[node name="NewGameButton" type="Button" parent="VBoxContainer/VBoxContainer2"]
+margin_right = 492.0
 margin_bottom = 50.0
 custom_fonts/font = SubResource( 3 )
-text = "Start game"
+text = "TITLESCREEN_NEWGAME"
 
-[node name="CreditsButton" type="Button" parent="VBoxContainer/VBoxContainer2"]
+[node name="ContinueButton" type="Button" parent="VBoxContainer/VBoxContainer2"]
+visible = false
 margin_top = 50.0
-margin_right = 292.0
+margin_right = 492.0
 margin_bottom = 100.0
 custom_fonts/font = SubResource( 4 )
-text = "Credits"
+disabled = true
+text = "TITLESCREEN_CONTINUE"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MusicButton" type="Button" parent="VBoxContainer/VBoxContainer2"]
+[node name="HelpButton" type="Button" parent="VBoxContainer/VBoxContainer2"]
+margin_top = 50.0
+margin_right = 492.0
+margin_bottom = 100.0
+custom_fonts/font = SubResource( 9 )
+text = "TITLESCREEN_HELP"
+
+[node name="SettingsButton" type="Button" parent="VBoxContainer/VBoxContainer2"]
 margin_top = 100.0
-margin_right = 292.0
+margin_right = 492.0
 margin_bottom = 150.0
 custom_fonts/font = SubResource( 5 )
-text = "Music on/off"
+text = "TITLESCREEN_SETTINGS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CreditsButton" type="Button" parent="VBoxContainer/VBoxContainer2"]
+margin_top = 150.0
+margin_right = 492.0
+margin_bottom = 200.0
+custom_fonts/font = SubResource( 7 )
+text = "TITLESCREEN_CREDITS"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VersionLabel" type="Label" parent="VBoxContainer"]
-margin_top = 356.0
-margin_right = 292.0
-margin_bottom = 380.0
-custom_fonts/font = SubResource( 6 )
+margin_top = 406.0
+margin_right = 492.0
+margin_bottom = 430.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "v0.1"
+custom_fonts/font = SubResource( 8 )
+text = "v0.2"
 __meta__ = {
 "_edit_use_anchors_": false
 }

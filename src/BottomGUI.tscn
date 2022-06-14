@@ -46,39 +46,39 @@ __meta__ = {
 }
 
 [node name="MetricsButton" type="Button" parent="."]
-margin_right = 93.0
+margin_right = 280.0
 margin_bottom = 70.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 1 )
-text = "Metrics"
+text = "BOTTOMGUI_METRICS"
 
 [node name="DevelopersButton" type="Button" parent="."]
-margin_left = 97.0
-margin_right = 228.0
+margin_left = 284.0
+margin_right = 618.0
 margin_bottom = 70.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 2 )
-text = "Developers"
+text = "BOTTOMGUI_DEVELOPERS"
 
 [node name="DailyButton" type="Button" parent="."]
-margin_left = 232.0
-margin_right = 326.0
+margin_left = 622.0
+margin_right = 863.0
 margin_bottom = 70.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 3 )
-text = "Daily"
+text = "BOTTOMGUI_DAILY"
 
 [node name="TasksButton" type="Button" parent="."]
-margin_left = 330.0
-margin_right = 423.0
+margin_left = 867.0
+margin_right = 1118.0
 margin_bottom = 70.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 4 )
-text = "Tasks"
+text = "BOTTOMGUI_TASKS"
 
 [node name="MenuButton" type="MenuButton" parent="."]
-margin_left = 427.0
-margin_right = 479.0
+margin_left = 1122.0
+margin_right = 1174.0
 margin_bottom = 70.0
 theme = SubResource( 7 )
 custom_fonts/font = SubResource( 8 )

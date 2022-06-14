@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://assets/Uplifting-Ballad.mp3" type="AudioStream" id=1]
 [ext_resource path="res://src/GameplayScene.gd" type="Script" id=2]
@@ -18,15 +18,53 @@
 [ext_resource path="res://src/DailyGUI.tscn" type="PackedScene" id=16]
 [ext_resource path="res://src/CourseEnrollmentGUI.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/MetricsScene.gd" type="Script" id=18]
+[ext_resource path="res://src/Settings.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/HelpScreen.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/HelpScreen.gd" type="Script" id=21]
+
+[sub_resource type="GDScript" id=2]
+script/source = "extends VBoxContainer
+
+func _ready():
+	$\"CloseButton\".connect(\"pressed\", self, \"_on_CloseButton_pressed\")
+	$\"CenterContainer/VBoxContainer/MusicButton\".connect(\"pressed\", self, \"_on_MusicButton_pressed\")
+	$\"CenterContainer/VBoxContainer/VBoxContainer/LanguageOptionButton\".connect(\"item_selected\", self, \"_on_LanguageOptionButton_item_selected\")
+
+func _on_CloseButton_pressed():
+	self.visible = false
+	$\"/root/Main/TitleScreen\".visible = true
+
+func _on_MusicButton_pressed():
+	if ($\"/root/Main\".music_is_playing):
+		$\"/root/Main\".music_is_playing = false
+		$\"/root/Main/Music\".stop()
+	else:
+		$\"/root/Main\".music_is_playing = true
+		$\"/root/Main/Music\".play()
+
+func _on_LanguageOptionButton_item_selected(index):
+	if (index == 0):
+		TranslationServer.set_locale(\"en\")
+	elif (index == 1):
+		TranslationServer.set_locale(\"ru\")
+"
+
+[sub_resource type="GDScript" id=3]
+script/source = "extends VBoxContainer
+
+func _ready():
+	$\"CloseButton\".connect(\"pressed\", self, \"_on_CloseButton_pressed\")
+
+func _on_CloseButton_pressed():
+	self.visible = false
+	$\"/root/Main/TitleScreen\".visible = true
+"
 
 [node name="Main" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 rect_min_size = Vector2( 100, 100 )
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0
@@ -53,7 +91,7 @@ __meta__ = {
 [node name="TopGUI" parent="ColorRect/VBoxContainer2" instance=ExtResource( 5 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 480.0
+margin_right = 1174.0
 margin_bottom = 55.0
 
 [node name="MetricsScene" parent="ColorRect/VBoxContainer2" instance=ExtResource( 8 )]
@@ -69,7 +107,7 @@ script = ExtResource( 18 )
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 59.0
-margin_right = 480.0
+margin_right = 1174.0
 margin_bottom = 726.0
 
 [node name="DailyGUI" parent="ColorRect/VBoxContainer2" instance=ExtResource( 16 )]
@@ -117,14 +155,14 @@ visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 394.0
-margin_right = 480.0
+margin_right = 1174.0
 margin_bottom = 726.0
 
 [node name="BottomGUI" parent="ColorRect/VBoxContainer2" instance=ExtResource( 4 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 730.0
-margin_right = 480.0
+margin_right = 1174.0
 margin_bottom = 800.0
 
 [node name="PopupPanel" parent="." instance=ExtResource( 14 )]
@@ -137,8 +175,17 @@ size_flags_vertical = 1
 [node name="TitleScreen" parent="." instance=ExtResource( 9 )]
 margin_bottom = 0.0
 
+[node name="HelpScreen" parent="." instance=ExtResource( 20 )]
+visible = false
+script = ExtResource( 21 )
+
+[node name="Settings" parent="." instance=ExtResource( 19 )]
+visible = false
+script = SubResource( 2 )
+
 [node name="Credits" parent="." instance=ExtResource( 10 )]
 visible = false
+script = SubResource( 3 )
 
 [node name="CongratulationsScreen" parent="." instance=ExtResource( 3 )]
 visible = false

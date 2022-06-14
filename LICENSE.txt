@@ -1,8 +1,10 @@
-Copyright (c) 2021 SprintCycle contributors
+Copyright (c) 2021-2022 SprintCycle contributors
 
 The material in the assets/ directory is licensed under the CC0 1.0 license (https://creativecommons.org/publicdomain/zero/1.0/) except for the material described in the ATTRIBUTIONS.txt file.
 
-All other material is licensed under the BSD-2-Clause-Patent license, see LICENSE.BSD-2-Clause-Patent.txt
+The material in the addons/ directory is licensed under the plugins' respective licenses, see the ATTRIBUTIONS.txt file.
+
+All other material is licensed under the BSD-2-Clause-Patent license, see the LICENSE.BSD-2-Clause-Patent.txt file.
 
 DISCLAIMER
 

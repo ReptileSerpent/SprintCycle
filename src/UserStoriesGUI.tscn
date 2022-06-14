@@ -24,17 +24,14 @@ anchor_bottom = 1.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Label" type="Label" parent="."]
+[node name="ChooseUserStoriesLabel" type="Label" parent="."]
 margin_right = 480.0
 margin_bottom = 75.0
 size_flags_horizontal = 3
-custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Choose user stories for the current sprint"
+custom_fonts/font = SubResource( 2 )
+text = "USERSTORIESGUI_CHOOSEUSERSTORIES"
 align = 1
 autowrap = true
 
@@ -70,7 +67,7 @@ margin_right = 351.839
 margin_bottom = 45.1748
 custom_fonts/font = SubResource( 5 )
 disabled = true
-text = "Proceed to the sprint"
+text = "USERSTORIESGUI_PROCEEDTOTHESPRINTBUTTON"
 __meta__ = {
 "_edit_use_anchors_": false
 }

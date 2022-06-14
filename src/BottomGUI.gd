@@ -7,35 +7,35 @@ func _ready():
 	$TasksButton.connect("pressed", self, "_on_TasksButton_pressed")
 
 func _on_MetricsButton_pressed():
-	get_node("ClickSound").play()
-	get_node(@"../MetricsScene").visible = true;
-	get_node(@"../DailyGUI").visible = false;
-	get_node(@"../TasksGUI").visible = false;
-	get_node(@"../DevelopersGUI").visible = false;
-	get_node(@"../CourseEnrollmentGUI").visible = false;
+	$"ClickSound".play()
+	$"../MetricsScene".visible = true;
+	$"../DailyGUI".visible = false;
+	$"../TasksGUI".visible = false;
+	$"../DevelopersGUI".visible = false;
+	$"../CourseEnrollmentGUI".visible = false;
 
 func _on_DevelopersButton_pressed():
-	get_node("ClickSound").play()
-	get_node(@"../MetricsScene").visible = false;
-	get_node(@"../DailyGUI").visible = false;
-	get_node(@"../TasksGUI").visible = false;
-	get_node(@"../DevelopersGUI").visible = true;
-	get_node(@"../CourseEnrollmentGUI").visible = false;
-	for developer_node in get_node(@"../DevelopersGUI/VBoxContainer").get_children():
+	$"ClickSound".play()
+	$"../MetricsScene".visible = false;
+	$"../DailyGUI".visible = false;
+	$"../TasksGUI".visible = false;
+	$"../DevelopersGUI".visible = true;
+	$"../CourseEnrollmentGUI".visible = false;
+	for developer_node in $"../DevelopersGUI/VBoxContainer".get_children():
 		developer_node.hideAssignmentButtons()
 
 func _on_DailyButton_pressed():
-	get_node("ClickSound").play()
-	get_node(@"../MetricsScene").visible = false;
-	get_node(@"../DailyGUI").visible = true;
-	get_node(@"../TasksGUI").visible = false;
-	get_node(@"../DevelopersGUI").visible = false;
-	get_node(@"../CourseEnrollmentGUI").visible = false;
+	$"ClickSound".play()
+	$"../MetricsScene".visible = false;
+	$"../DailyGUI".visible = true;
+	$"../TasksGUI".visible = false;
+	$"../DevelopersGUI".visible = false;
+	$"../CourseEnrollmentGUI".visible = false;
 	
 func _on_TasksButton_pressed():
-	get_node("ClickSound").play()
-	get_node(@"../MetricsScene").visible = false;
-	get_node(@"../DailyGUI").visible = false;
-	get_node(@"../TasksGUI").visible = true;
-	get_node(@"../DevelopersGUI").visible = false;
-	get_node(@"../CourseEnrollmentGUI").visible = false;
+	$"ClickSound".play()
+	$"../MetricsScene".visible = false;
+	$"../DailyGUI".visible = false;
+	$"../TasksGUI".visible = true;
+	$"../DevelopersGUI".visible = false;
+	$"../CourseEnrollmentGUI".visible = false;

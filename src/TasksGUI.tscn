@@ -8,9 +8,6 @@ margin_bottom = -800.0
 rect_min_size = Vector2( 400, 400 )
 mouse_filter = 1
 size_flags_vertical = 3
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_right = 400.0

@@ -5,8 +5,8 @@ var popup
 func _ready():
 	popup = get_popup()
 	# popup.add_item("Sprint backlog")
-	popup.add_item("Music on/off")
-	popup.add_item("Return to title screen")
+	popup.add_item("BOTTOMGUI_MENU_MUSICITEM")
+	popup.add_item("BOTTOMGUI_MENU_RETURNTOTITLESCREENITEM")
 	popup.connect("id_pressed", self, "_on_item_pressed")
 
 func _on_item_pressed(ID):
@@ -17,13 +17,13 @@ func _on_item_pressed(ID):
 	#	get_node(@"/root/Main/ColorRect/VBoxContainer2/TasksGUI").visible = false;
 	#	get_node(@"/root/Main/ColorRect/VBoxContainer2/DevelopersGUI").visible = false;
 	#	get_node(@"/root/Main/ColorRect/VBoxContainer2/CourseEnrollmentGUI").visible = false;
-	if (item_text == "Music on/off"):
-		if (get_node("/root/Main").music_is_playing):
-			get_node("/root/Main").music_is_playing = false
-			get_node("/root/Main/Music").stop()
+	if (item_text == "BOTTOMGUI_MENU_MUSICITEM"):
+		if ($"/root/Main".music_is_playing):
+			$"/root/Main".music_is_playing = false
+			$"/root/Main/Music".stop()
 		else:
-			get_node("/root/Main").music_is_playing = true
-			get_node("/root/Main/Music").play() 
-	elif (item_text == "Return to title screen"):
-		get_node("/root/Main/ColorRect/VBoxContainer2").visible = false
-		get_node("/root/Main/TitleScreen").visible = true
+			$"/root/Main".music_is_playing = true
+			$"/root/Main/Music".play() 
+	elif (item_text == "BOTTOMGUI_MENU_RETURNTOTITLESCREENITEM"):
+		$"/root/Main/ColorRect/VBoxContainer2".visible = false
+		$"/root/Main/TitleScreen".visible = true

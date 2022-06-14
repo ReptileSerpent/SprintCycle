@@ -1,0 +1,88 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://src/UserStoryScene.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.952941, 0.968627, 0.717647, 1 )
+
+[sub_resource type="DynamicFontData" id=2]
+font_path = "res://assets/LiberationSans-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+font_data = SubResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 18
+font_data = SubResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 20
+font_data = SubResource( 2 )
+
+[sub_resource type="DynamicFontData" id=6]
+font_path = "res://assets/LiberationSans-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=7]
+size = 25
+font_data = SubResource( 6 )
+
+[node name="Panel" type="Panel"]
+margin_right = 450.0
+margin_bottom = 185.0
+rect_min_size = Vector2( 450, 185 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NameLabel" type="Label" parent="."]
+margin_left = 5.33936
+margin_top = 1.52588e-05
+margin_right = 356.339
+margin_bottom = 35.0
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Account cancellation story"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DescriptionLabel" type="Label" parent="."]
+margin_left = 6.0
+margin_top = 32.0
+margin_right = 452.0
+margin_bottom = 102.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "I am a customer and I want a 'cancel account' button so I can cancel my account"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PointsLabel" type="Label" parent="."]
+margin_left = 8.88776
+margin_top = 99.1684
+margin_right = 178.888
+margin_bottom = 123.168
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Story points: 21"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 4.05615
+margin_top = 125.27
+margin_right = 443.056
+margin_bottom = 183.27
+custom_fonts/font = SubResource( 7 )
+toggle_mode = true
+text = "USERSTORY_ADDTOSPRINTBUTTON"
+__meta__ = {
+"_edit_use_anchors_": false
+}

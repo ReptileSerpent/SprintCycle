@@ -1,0 +1,127 @@
+[gd_scene load_steps=10 format=2]
+
+[sub_resource type="GDScript" id=12]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://assets/LiberationSans-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=7]
+size = 20
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://assets/LiberationSans-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=8]
+size = 20
+font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 20
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 20
+font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://assets/LiberationSans-Regular.ttf"
+
+[sub_resource type="DynamicFont" id=11]
+size = 38
+font_data = SubResource( 5 )
+
+[node name="VBoxContainer" type="VBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = SubResource( 12 )
+
+[node name="HelpRichTextLabel_en" type="RichTextLabel" parent="."]
+visible = false
+margin_right = 569.0
+margin_bottom = 371.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/bold_font = SubResource( 7 )
+custom_fonts/normal_font = SubResource( 8 )
+bbcode_enabled = true
+bbcode_text = "
+[center][b]Help[/b][/center]
+
+SCRUM is used by a large number of organizations that seek to make the product development process more agile. This game is intended to help the player get acquainted with some of the practices of this framework, but is probably not completely accurate: some simplifications have been made to make the game more fun.
+
+SCRUM is designed for small teams whose work is divided into fixed periods, called sprints, lasting from 1 week to 1 month. A team includes a product owner, a SCRUM master and developers. The product owner represents the interests of the stakeholders and the users, is responsible for adding new user stories to the project backlog (a list of features that aren't implemented yet) and prioritizing them. The team of developers organizes itself to achieve the sprint goals. The SCRUM master teaches the team about SCRUM practices, helps with self-organization, protects developers from distractions and hosts a daily 15-minute meeting, during which each of the developers talks briefly about the work they've done the previous working day, what they plan to work on today and about any impediments that may be slowing them down.
+
+During a sprint planning meeting, the team chooses so called user stories — some features that need to be implemented. The difficulty of implementing a user story is usually subjectively measured in story points using the rounded Fibonacci sequence (1, 2, 3, 5, 8, 13, 20). At a sprint review at the end of a sprint the team presents the current state of the product to the client and receives feedback. After that, a sprint retrospective meeting is held between the developers and the SCRUM master to discuss any organizational problems that arised and how the workflow could be improved.
+
+To better understand how the team is doing, the SCRUM master may use multiple metrics, such as:
+• A burndown chart — a graphical representation of the work already completed and the work remaining. In this game the red line in the chart represents the actual burndown and the green one serves as a benchmark
+• A сumulative flow diagram — a diagram that represents the work completed, planned and in progress
+• A velocity chart — a diagram that shows the number of story points completed per sprint (only the user stories with all tasks completed are taken into account)"
+text = "
+Help
+
+SCRUM is used by a large number of organizations that seek to make the product development process more agile. This game is intended to help the player get acquainted with some of the practices of this framework, but is probably not completely accurate: some simplifications have been made to make the game more fun.
+
+SCRUM is designed for small teams whose work is divided into fixed periods, called sprints, lasting from 1 week to 1 month. A team includes a product owner, a SCRUM master and developers. The product owner represents the interests of the stakeholders and the users, is responsible for adding new user stories to the project backlog (a list of features that aren't implemented yet) and prioritizing them. The team of developers organizes itself to achieve the sprint goals. The SCRUM master teaches the team about SCRUM practices, helps with self-organization, protects developers from distractions and hosts a daily 15-minute meeting, during which each of the developers talks briefly about the work they've done the previous working day, what they plan to work on today and about any impediments that may be slowing them down.
+
+During a sprint planning meeting, the team chooses so called user stories — some features that need to be implemented. The difficulty of implementing a user story is usually subjectively measured in story points using the rounded Fibonacci sequence (1, 2, 3, 5, 8, 13, 20). At a sprint review at the end of a sprint the team presents the current state of the product to the client and receives feedback. After that, a sprint retrospective meeting is held between the developers and the SCRUM master to discuss any organizational problems that arised and how the workflow could be improved.
+
+To better understand how the team is doing, the SCRUM master may use multiple metrics, such as:
+• A burndown chart — a graphical representation of the work already completed and the work remaining. In this game the red line in the chart represents the actual burndown and the green one serves as a benchmark
+• A сumulative flow diagram — a diagram that represents the work completed, planned and in progress
+• A velocity chart — a diagram that shows the number of story points completed per sprint (only the user stories with all tasks completed are taken into account)"
+
+[node name="HelpRichTextLabel_ru" type="RichTextLabel" parent="."]
+margin_right = 569.0
+margin_bottom = 746.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/bold_font = SubResource( 9 )
+custom_fonts/normal_font = SubResource( 10 )
+bbcode_enabled = true
+bbcode_text = "
+[center][b]Помощь[/b][/center]
+
+SCRUM используется большим количеством организаций, стремящихся сделать процесс разработки продуктов более гибким. Эта игра призвана помочь ознакомиться с некоторыми практиками этого фреймворка, но не претендует на абсолютную точность: допущены некоторые упрощения, чтобы сделать игру интереснее.
+
+Использование практик SCRUM предполагает, как правило, небольшую команду людей, работа которой разделяется на фиксированные промежутки времени, называемые спринтами, длительностью от 1 недели до 1 месяца. В команду входят владелец продукта, SCRUM-мастер и разработчики. Владелец продукта представляет интересы заказчика и пользователей, ответственен за внесение новых пользовательских историй в бэклог проекта (список ещё не реализованного функционала) и приоритизацию элементов в нём. Команда разработчиков выполняет работу для достижения целей спринта, причём разработчики могут самостоятельно выбирать подходящие способы выполнения работы. SCRUM-мастер обучает команду практикам SCRUM, помогает в самоорганизации и защищает разработчиков от отвлекающих факторов; также в его обязательства входит ежедневное проведение 15-минутной встречи (дейли), во
+время которой каждый из разработчиков вкратце рассказывает о своей работе в предыдущий рабочий день, о своих планах на текущий рабочий день и каких-либо препятствиях, мешающих работе.
+
+В процессе планирования спринта командой выбираются так называемые пользовательские истории — некоторый функционал, который требуется реализовать. Сложность выполнения пользовательской истории обычно субъективно измеряется в баллах с использованием модифицированной последовательности Фибоначчи: 1, 2, 3, 5, 8, 13, 20. В конце спринта проводится обзор спринта, где происходит демонстрация изменений в проекте представителям заказчика и получение обратной связи. Далее, во время ретроспективного совещания разработчики и SCRUM-мастер разбирают возникшие организационные проблемы и обсуждают, как можно улучшить рабочий процесс.
+
+Для лучшего понимания происходящего в команде, SCRUM-мастер может использовать такие метрики, как:
+• диаграмма сгорания (burndown chart) — графическое представление выполненной и ещё не выполненной работы в данном спринте. В этой игре в диаграмме красной линией изображено фактическое сгорание, зелёной — ориентировочное
+• диаграмма накопительного потока (сumulative flow diagram) — диаграмма с областями, отображающими объём выполненной, запланированной и выполняемой в данный момент работы
+• диаграмма скорости (velocity chart) — диаграмма, показывающая сумму баллов выполненных пользовательских историй за спринт. Учитываются только те пользовательские истории, у которых были выполнены все задачи"
+text = "
+Помощь
+
+SCRUM используется большим количеством организаций, стремящихся сделать процесс разработки продуктов более гибким. Эта игра призвана помочь ознакомиться с некоторыми практиками этого фреймворка, но не претендует на абсолютную точность: допущены некоторые упрощения, чтобы сделать игру интереснее.
+
+Использование практик SCRUM предполагает, как правило, небольшую команду людей, работа которой разделяется на фиксированные промежутки времени, называемые спринтами, длительностью от 1 недели до 1 месяца. В команду входят владелец продукта, SCRUM-мастер и разработчики. Владелец продукта представляет интересы заказчика и пользователей, ответственен за внесение новых пользовательских историй в бэклог проекта (список ещё не реализованного функционала) и приоритизацию элементов в нём. Команда разработчиков выполняет работу для достижения целей спринта, причём разработчики могут самостоятельно выбирать подходящие способы выполнения работы. SCRUM-мастер обучает команду практикам SCRUM, помогает в самоорганизации и защищает разработчиков от отвлекающих факторов; также в его обязательства входит ежедневное проведение 15-минутной встречи (дейли), во
+время которой каждый из разработчиков вкратце рассказывает о своей работе в предыдущий рабочий день, о своих планах на текущий рабочий день и каких-либо препятствиях, мешающих работе.
+
+В процессе планирования спринта командой выбираются так называемые пользовательские истории — некоторый функционал, который требуется реализовать. Сложность выполнения пользовательской истории обычно субъективно измеряется в баллах с использованием модифицированной последовательности Фибоначчи: 1, 2, 3, 5, 8, 13, 20. В конце спринта проводится обзор спринта, где происходит демонстрация изменений в проекте представителям заказчика и получение обратной связи. Далее, во время ретроспективного совещания разработчики и SCRUM-мастер разбирают возникшие организационные проблемы и обсуждают, как можно улучшить рабочий процесс.
+
+Для лучшего понимания происходящего в команде, SCRUM-мастер может использовать такие метрики, как:
+• диаграмма сгорания (burndown chart) — графическое представление выполненной и ещё не выполненной работы в данном спринте. В этой игре в диаграмме красной линией изображено фактическое сгорание, зелёной — ориентировочное
+• диаграмма накопительного потока (сumulative flow diagram) — диаграмма с областями, отображающими объём выполненной, запланированной и выполняемой в данный момент работы
+• диаграмма скорости (velocity chart) — диаграмма, показывающая сумму баллов выполненных пользовательских историй за спринт. Учитываются только те пользовательские истории, у которых были выполнены все задачи"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CloseButton" type="Button" parent="."]
+margin_top = 750.0
+margin_right = 569.0
+margin_bottom = 800.0
+custom_fonts/font = SubResource( 11 )
+text = "HELPSCREEN_CLOSEBUTTON"

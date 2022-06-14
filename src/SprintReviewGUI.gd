@@ -1,40 +1,40 @@
 extends VBoxContainer
 
 func _ready():
-	$"Panel/Button".connect("pressed", self, "_on_Button_pressed")
+	$"Panel/ProceedToSprintRetrospectiveButton".connect("pressed", self, "_on_ProceedToSprintRetrospectiveButton_pressed")
 
-func _on_Button_pressed():
-	get_node("/root/Main/ColorRect/VBoxContainer2/SprintReviewGUI").visible = false
+func _on_ProceedToSprintRetrospectiveButton_pressed():
+	$"/root/Main/ColorRect/VBoxContainer2/SprintReviewGUI".visible = false
 	
-	get_node("/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/CompletedAllTasksLabel").visible = false
-	get_node("/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/GoodCooperationLabel").visible = false
-	get_node("/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/PoorCooperationLabel").visible = false
-	get_node("/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/LowMoraleLabel").visible = false
-	get_node("/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/BoredomLabel").visible = false
-	get_node("/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/TooManyTasksLabel").visible = false
-	get_node("/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/RemoveDailiesLabel").visible = false
-	get_node("/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/AddMoreStoriesToSprintsLabel").visible = false
-	get_node("/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/HaveFewerStoriesInSprintsLabel").visible = false
-	get_node("/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/AssignTasksBetterLabel").visible = false
-	get_node("/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/NotAllTasksCompletedLabel").visible = false
+	$"/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/CompletedAllTasksLabel".visible = false
+	$"/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/GoodCooperationLabel".visible = false
+	$"/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/PoorCooperationLabel".visible = false
+	$"/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/LowMoraleLabel".visible = false
+	$"/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/BoredomLabel".visible = false
+	$"/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/TooManyTasksLabel".visible = false
+	$"/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/RemoveDailiesLabel".visible = false
+	$"/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/AddMoreStoriesToSprintsLabel".visible = false
+	$"/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/HaveFewerStoriesInSprintsLabel".visible = false
+	$"/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/AssignTasksBetterLabel".visible = false
+	$"/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/NotAllTasksCompletedLabel".visible = false
 	
 	var userstories_completed = 0
-	for userstory in get_node("/root/Main").chosenUserStories:
+	for userstory in $"/root/Main".chosen_userstories:
 		var tasks_completed = 0
-		for task in userstory.tasksList:
+		for task in userstory.tasks_list:
 			if (task.completionPercentage >= 100):
 				tasks_completed += 1
-		if (tasks_completed == userstory.tasksList.size()):
+		if (tasks_completed == userstory.tasks_list.size()):
 			userstories_completed += 1
 	
-	if (userstories_completed == get_node("/root/Main").chosenUserStories.size()):
-		get_node("/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/CompletedAllTasksLabel").visible = true
+	if (userstories_completed == $"/root/Main".chosen_userstories.size()):
+		$"/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/CompletedAllTasksLabel".visible = true
 	else:
-		get_node("/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/NotAllTasksCompletedLabel").visible = true
-		get_node("/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/AssignTasksBetterLabel").visible = true
+		$"/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/NotAllTasksCompletedLabel".visible = true
+		$"/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/AssignTasksBetterLabel".visible = true
 	
-	if ("no tasks were assigned" in get_node("/root/Main").previous_daily):
-		get_node("/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/BoredomLabel").visible = true
-		get_node("/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/AddMoreStoriesToSprintsLabel").visible = true
+	if (tr("DAILYGUI_NOTHINGWORKEDONASNWER") in $"/root/Main".previous_daily):
+		$"/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/BoredomLabel".visible = true
+		$"/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI/AddMoreStoriesToSprintsLabel".visible = true
 	
-	get_node("/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI").visible = true
+	$"/root/Main/ColorRect/VBoxContainer2/SprintRetrospectiveGUI".visible = true

@@ -1,0 +1,65 @@
+keys;en;ru
+USERSTORYCONCEPT_NAME;Website concept story;История “концепт сайта”
+USERSTORYCONCEPT_DESCRIPTION;I am a developer and I want a website concept so I can add further functionality to it;Я разработчик и я хочу получить концепт сайта, чтобы я мог добавлять к нему функционал
+USERSTORYCONCEPT_TASK01_NAME;Spin up SQL databases;Настроить СУБД
+USERSTORYCONCEPT_TASK02_NAME;Design SQL databases for products, orders and customers;Составить базы данных SQL для товаров, заказов и покупателей
+USERSTORYCONCEPT_TASK03_NAME;Write SQL commands for the orders database;Написать команды SQL для базы данных заказов
+USERSTORYCONCEPT_TASK04_NAME;Write SQL commands for the products database;Написать команды SQL для базы данных товаров
+USERSTORYCONCEPT_TASK05_NAME;Write SQL commands for the customers database;Написать команды SQL для базы данных покупателей
+USERSTORYCONCEPT_TASK06_NAME;Create a website with a basic layout;Создать сайт с базовым макетом
+USERSTORYCONCEPT_TASK07_NAME;Add a web UI for searching items;Добавить веб интерфейс для поиска товаров
+USERSTORYCONCEPT_TASK08_NAME;BUG: Database doesn't support non-english letters;БАГ: база данных не поддерживает какие-либо буквы, кроме английских
+USERSTORYAUTH_NAME;User authentication story;История “ауентификация”
+USERSTORYAUTH_DESCRIPTION;I am a customer and I want to be able to authenticate so I can manage my account;Я покупатель и я хочу иметь возможность ауетифицироваться, чтобы управлять своим аккаунтом
+USERSTORYAUTH_TASK01_NAME;Add a user interface for logging in;Добавить веб интерфейс для входа на сайт
+USERSTORYAUTH_TASK02_NAME;Add a user interface for registration;Добавить веб интерфейс для регистрации на сайте
+USERSTORYAUTH_TASK03_NAME;Add a page for account settings;Добавить страницу для настроек аккаунта
+USERSTORYAUTH_TASK04_NAME;Add a page for current orders;Добавить страницу для текущих заказов
+USERSTORYAUTH_TASK05_NAME;BUG: Current orders page fails to load if an order contains more than 3 items;БАГ: страница для текущих заказов не загружается, если в заказе больше 3 предметов
+USERSTORYADMIN_NAME;Administration story;История “администрирование”
+USERSTORYADMIN_DESCRIPTION;I am a store administrator and I want a graphical UI for adding, editing and removing products, as well as fulfilling orders;Я администратор магазина и я хочу иметь возможность добавлять, редактировать и удалять товары, а также для отправлять заказы
+USERSTORYADMIN_TASK01_NAME;Write SQL commands for administrative actions;Написать команды SQL для административных действий
+USERSTORYADMIN_TASK02_NAME;Implement a basic web administrator page;Создать страницу администратора с базовым макетом
+USERSTORYADMIN_TASK03_NAME;Add orders management functionality;Добавить функционал для управления заказами
+USERSTORYADMIN_TASK04_NAME;Add accounts management functionality;Добавить функционал для управления аккаунтами
+USERSTORYADMIN_TASK05_NAME;Add administrator authentication UI;Добавить веб интерфейс для ауентификации администратора
+USERSTORYREVIEWS_NAME;Reviews story;История “отзывы”
+USERSTORYREVIEWS_DESCRIPTION;I am a customer and I want to be able to leave a review so that I can share my opinion about a product;Я покупатель и я хочу иметь возможность оставить отзыв, чтобы я смог поделиться мнением о товаре
+USERSTORYREVIEWS_TASK01_NAME;"Make database changes to allow customers to use a ""5 star"" ratings system";Внести изменения в базу данных, чтобы пользователи могли оставлять оценки по пятизвёздочной шкале
+USERSTORYREVIEWS_TASK02_NAME;"Make UI changes to add a \""5 star\"" ratings system";Добавить в веб интерфейс функции добавления и отображения оценок по пятизвёздочной шкале
+USERSTORYREVIEWS_TASK03_NAME;BUG: the page sometimes freezes when loading reviews;БАГ: страница иногда зависает во время загрузки оценок
+USERSTORYDELETION_NAME;Account deletion story;История “удаление аккаунта”
+USERSTORYDELETION_DESCRIPTION;I am a customer and I want to be able to delete my account so that I don't have to worry about an account I don't need anymore;Я покупатель и я хочу иметь возможность удалить свой аккаунт, чтобы мне не нужно было беспокоиться об аккаунте, который мне не нужен
+USERSTORYDELETION_TASK01_NAME;Write SQL commands for account deletion;Написать команды SQL для удаления аккаунта
+USERSTORYDELETION_TASK02_NAME;Add web UI for account deletion;Добавить в веб интерфейс функцию удаления аккаунта
+USERSTORYDELETION_TASK03_NAME;BUG: The account deletion button does nothing on some devices;БАГ: кнопка для удаления аккаунта ничего не работает на некоторых устройствах
+USERSTORYDELETION_TASK04_NAME;BUG: The account deletion confirmation prompt is unreadable on some devices;БАГ: запрос на подтверждение удаления аккаунта нечитабелен на некоторых устройствах
+USERSTORYFRONTPAGE_NAME;Front page story;История “главная страница”
+USERSTORYFRONTPAGE_DESCRIPTION;I am a store manager and I want to be able to show discounted items on the front page so that I can clear out old stock more quickly;Я менеджер магазина и я хочу выставлять уценённые товары на главной странице, чтобы быстрее избавляться от старых товаров на складе
+USERSTORYFRONTPAGE_TASK01_NAME;Add a selection of discounted items to the front page;Добавить выборку уценённых товаров на главную страницу
+USERSTORYFRONTPAGE_TASK02_NAME;Allow editing the front page from the administrator page;Добавить возможность редактирования главной страницы через страницу администратора
+USERSTORYFRONTPAGE_TASK03_NAME;BUG: The UI breaks if more than 10 items are displayed;БАГ: интерфейс ломается, если отображено больше 10 товаров
+USERSTORYFRONTPAGE_TASK04_NAME;BUG: The first item on the front page never shows the discount;БАГ: у первого товара на главной странице не отображается скидка
+USERSTORYGRAPHICDESIGN_NAME;Graphic design story;История “графический дизайн”
+USERSTORYGRAPHICDESIGN_DESCRIPTION;I am a store owner and I want a good design for the website so that customers can do their shopping comfortably;Я владелец магазина и я хочу получить сайт с хорошим дизайном, чтобы покупателям было удобно делать покупки
+USERSTORYGRAPHICDESIGN_TASK01_NAME;Pick fitting fonts for the UI;Подобрать шрифты для интерфейса
+USERSTORYGRAPHICDESIGN_TASK02_NAME;Pick a colour scheme for the UI;Подобрать цветовую палитру для интерфейса
+USERSTORYGRAPHICDESIGN_TASK03_NAME;Create a design for the UI;Создать дизайн интерфейса
+USERSTORYGRAPHICDESIGN_TASK04_NAME;Apply the design to the web pages;Применить дизайн к веб страницам
+USERSTORYCHANGES1_NAME;Design changes story;История “изменения дизайна”
+USERSTORYCHANGES1_DESCRIPTION;I am your client and I want some changes made to the design;Я ваш клиент и я хочу, чтобы вы внесли изменения в дизайне
+USERSTORYCHANGES1_TASK01_NAME;Have the authentication window slide in from the side;Сделать так, чтобы окно ауентификации выдвигалось сбоку
+USERSTORYCHANGES1_TASK02_NAME;"Add ""not a robot"" validation to the authentication window";Добавить валидацию “я не робот” в окно ауентификации
+USERSTORYCHANGES1_TASK03_NAME;Move website navigation from the left side of the page to the right side;Передвинуть навигацию по сайту с левой стороны страницы на правую
+USERSTORYCHANGES1_TASK04_NAME;"Make database changes to replace the ""5 star"" ratings system with ""thumbs-up/thumbs-down""";Внести изменения в базу данных, чтобы заменить пятизвёздочную шкалу оценки на “Отлично!”/”Плохо!”
+USERSTORYCHANGES1_TASK05_NAME;"Make UI changes to replace the ""5 star"" ratings system with ""thumbs-up/thumbs-down""";Внести изменения в интерфейс, чтобы заменить пятизвёздочную шкалу оценки на “Отлично!”/”Плохо!”
+USERSTORYCHANGES1_TASK06_NAME;Allow hiding the username when submitting a review;Добавить возможность скрыть имя пользователя при загрузке отзыва
+USERSTORYCHANGES1_TASK07_NAME;BUG: the database crashes on startup after a recent security update;БАГ: СУБД падает при запуске после недавнего обновления безопасности
+USERSTORYCHANGES2_NAME;More design changes story;История “ещё изменения дизайна”
+USERSTORYCHANGES2_DESCRIPTION;I am your client and I want some changes made to the design;Я ваш клиент и я хочу, чтобы вы внесли изменения в дизайне
+USERSTORYCHANGES2_TASK01_NAME;Add multiple levels of administrators in the database;Добавить в базу данных несколько уровней администраторов
+USERSTORYCHANGES2_TASK02_NAME;Implement different functionality for different levels of administrators on the administrator page;Сделать разный функционал администраторам разных уровней на странице администратора
+USERSTORYCHANGES2_TASK03_NAME;Change authentication window to accomodate multiple levels of administrators;Изменить окно ауентификации, чтобы поддерживались администраторы разных уровней
+USERSTORYCHANGES2_TASK04_NAME;Make green the primary colour of the UI;Сделать зелёный основным цветом интерфейса
+USERSTORYCHANGES2_TASK05_NAME;Add ads on the left side of the page;Добавить рекламу на левой стороне страницы
+USERSTORYCHANGES2_TASK06_NAME;Allow customers to edit and delete reviews;Добавить пользователям возможность редактирования и удаления отзывов администратора
